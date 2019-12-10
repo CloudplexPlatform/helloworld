@@ -7,6 +7,6 @@ jobs:
       - run:
           name: helloworld Build and push Docker image
           command: |
-            sudo docker build -t haseebh/helloworld:${CIRCLE_BUILD_NUM} .
+            sudo docker build -t cloudplexng/helloworld:${CIRCLE_BUILD_NUM} .
             sudo docker login -u "$username" -p "$password"
-            sudo docker push haseebh/helloworld:${CIRCLE_BUILD_NUM}
+            sudo docker push cloudplexng/helloworld:${CIRCLE_BUILD_NUM}
